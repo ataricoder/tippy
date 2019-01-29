@@ -51,14 +51,20 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-vU-i8Y">
+                                        <rect key="frame" x="0.0" y="358" width="58" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-Im-TQf">
-                                        <rect key="frame" x="264.66666666666669" y="258" width="60.333333333333314" height="28.666666666666686"/>
+                                        <rect key="frame" x="264.66666666666669" y="358" width="60.333333333333314" height="28.666666666666686"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vz4-hq-Jem">
-                                        <rect key="frame" x="0.0" y="180" width="325" height="29"/>
+                                        <rect key="frame" x="0.0" y="150" width="325" height="29"/>
                                         <segments>
                                             <segment title="15%"/>
                                             <segment title="18%"/>
@@ -69,8 +75,12 @@
                                             <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="YH3-ER-wvq"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-vU-i8Y">
-                                        <rect key="frame" x="0.0" y="258" width="58" height="30"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="yNv-Di-MvX">
+                                        <rect key="frame" x="-2" y="278" width="329" height="31"/>
+                                        <color key="tintColor" red="0.12941176469999999" green="0.80784313730000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnN-cn-NVI">
+                                        <rect key="frame" x="0.0" y="228" width="54" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -80,19 +90,24 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="p9L-yh-gHJ" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="0Nf-ML-MrF"/>
-                                    <constraint firstItem="xnP-Im-TQf" firstAttribute="top" secondItem="Vz4-hq-Jem" secondAttribute="bottom" constant="50" id="6Ln-yN-BXi"/>
+                                    <constraint firstItem="yNv-Di-MvX" firstAttribute="top" secondItem="gnN-cn-NVI" secondAttribute="bottom" constant="20" id="BnQ-5u-uvg"/>
                                     <constraint firstItem="uOd-vU-i8Y" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="DaU-7c-xc9"/>
+                                    <constraint firstItem="xnP-Im-TQf" firstAttribute="top" secondItem="yNv-Di-MvX" secondAttribute="bottom" constant="50" id="Iif-zH-5RP"/>
                                     <constraint firstItem="Shb-Zr-8dB" firstAttribute="top" secondItem="DQ0-ko-wnU" secondAttribute="top" constant="20" id="Lf5-SQ-ihc"/>
                                     <constraint firstItem="SpW-7l-eTB" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="MVD-wP-OTM"/>
-                                    <constraint firstItem="Vz4-hq-Jem" firstAttribute="top" secondItem="FRf-e8-nsX" secondAttribute="bottom" constant="50" id="RIA-5h-2oD"/>
+                                    <constraint firstItem="Vz4-hq-Jem" firstAttribute="top" secondItem="FRf-e8-nsX" secondAttribute="bottom" constant="20" id="RIA-5h-2oD"/>
                                     <constraint firstItem="p9L-yh-gHJ" firstAttribute="top" secondItem="SpW-7l-eTB" secondAttribute="bottom" constant="50" id="ST1-1W-vM6"/>
+                                    <constraint firstItem="gnN-cn-NVI" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="TkJ-kB-AjK"/>
                                     <constraint firstItem="FRf-e8-nsX" firstAttribute="top" secondItem="Shb-Zr-8dB" secondAttribute="bottom" constant="50" id="aoi-PB-sdz"/>
+                                    <constraint firstItem="uOd-vU-i8Y" firstAttribute="top" secondItem="yNv-Di-MvX" secondAttribute="bottom" constant="50" id="cxK-LD-Bax"/>
                                     <constraint firstAttribute="trailing" secondItem="Shb-Zr-8dB" secondAttribute="trailing" id="iSv-oT-qDj"/>
                                     <constraint firstAttribute="trailing" secondItem="FRf-e8-nsX" secondAttribute="trailing" id="o28-6D-RvY"/>
+                                    <constraint firstItem="yNv-Di-MvX" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="oTw-3B-T0c"/>
+                                    <constraint firstAttribute="trailing" secondItem="yNv-Di-MvX" secondAttribute="trailing" id="ptp-9G-Gev"/>
                                     <constraint firstAttribute="trailing" secondItem="xnP-Im-TQf" secondAttribute="trailing" id="qlM-Vb-4iZ"/>
                                     <constraint firstItem="SpW-7l-eTB" firstAttribute="top" secondItem="DQ0-ko-wnU" secondAttribute="top" constant="20" id="rIx-Ap-hc9"/>
                                     <constraint firstAttribute="trailing" secondItem="Vz4-hq-Jem" secondAttribute="trailing" id="tLB-AT-P7q"/>
-                                    <constraint firstItem="uOd-vU-i8Y" firstAttribute="top" secondItem="Vz4-hq-Jem" secondAttribute="bottom" constant="50" id="tZm-XJ-cAR"/>
+                                    <constraint firstItem="gnN-cn-NVI" firstAttribute="top" secondItem="Vz4-hq-Jem" secondAttribute="bottom" constant="50" id="x8R-ab-Tqv"/>
                                     <constraint firstItem="Vz4-hq-Jem" firstAttribute="leading" secondItem="DQ0-ko-wnU" secondAttribute="leading" id="z46-Jt-0YH"/>
                                 </constraints>
                                 <connections>
@@ -132,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="3903.1999999999998" y="133.74384236453201"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="8Fl-eZ-RIO">
             <objects>
-                <viewController id="pF4-G7-9aI" sceneMemberID="viewController">
+                <viewController id="pF4-G7-9aI" customClass="SettingsViewController" customModule="tippy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lzZ-qZ-isE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

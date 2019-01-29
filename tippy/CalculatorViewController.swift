@@ -18,6 +18,7 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Add title to the navigation bar
         self.title = "Tippy"
     }
     
