@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3B405EE822001197000BC13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405EE722001197000BC13F /* AppDelegate.swift */; };
-		3B405EEA22001197000BC13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405EE922001197000BC13F /* ViewController.swift */; };
 		3B405EED22001197000BC13F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B405EEB22001197000BC13F /* Main.storyboard */; };
 		3B405EEF22001198000BC13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B405EEE22001198000BC13F /* Assets.xcassets */; };
 		3B405EF222001198000BC13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B405EF022001198000BC13F /* LaunchScreen.storyboard */; };
 		3B405EFD22001199000BC13F /* tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405EFC22001199000BC13F /* tippyTests.swift */; };
 		3B405F0822001199000BC13F /* tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F0722001199000BC13F /* tippyUITests.swift */; };
+		3B405F16220011C2000BC13F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F15220011C2000BC13F /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		3B405EE422001197000BC13F /* tippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B405EE722001197000BC13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B405EE922001197000BC13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B405EEC22001197000BC13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B405EEE22001198000BC13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B405EF122001198000BC13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		3B405F0322001199000BC13F /* tippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B405F0722001199000BC13F /* tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippyUITests.swift; sourceTree = "<group>"; };
 		3B405F0922001199000BC13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B405F15220011C2000BC13F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				3B405EE722001197000BC13F /* AppDelegate.swift */,
-				3B405EE922001197000BC13F /* ViewController.swift */,
 				3B405EEB22001197000BC13F /* Main.storyboard */,
 				3B405EEE22001198000BC13F /* Assets.xcassets */,
 				3B405EF022001198000BC13F /* LaunchScreen.storyboard */,
 				3B405EF322001198000BC13F /* Info.plist */,
+				3B405F15220011C2000BC13F /* CalculatorViewController.swift */,
 			);
 			path = tippy;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B405EEA22001197000BC13F /* ViewController.swift in Sources */,
+				3B405F16220011C2000BC13F /* CalculatorViewController.swift in Sources */,
 				3B405EE822001197000BC13F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
