@@ -14,6 +14,7 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var splitField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +29,25 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func calculateTip(_ sender: Any) {
         
+        let numberPeople = Double(splitField.text!) ?? 0
+        
         //Get the bill amount
         let bill = Double(billField.text!) ?? 0
         
         //Calcualte the tip and total
         let tipPercentages = [0.15, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
-        let total = bill + tip
+        let total = (bill + tip)/numberPeople
+        
+        
         
         //Update the tip and total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
     
+    @IBAction func calculateSplit(_ sender: UISlider) {
+        splitField.text! = String(Int(sender.value))
+        
+    }
 }
