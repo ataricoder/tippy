@@ -90,7 +90,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tippy" id="uZC-66-RkX"/>
+                    <navigationItem key="navigationItem" title="Tippy" id="uZC-66-RkX">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7N3-6W-lhO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="akC-TG-rMM">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                            <connections>
+                                <segue destination="0f2-5u-69K" kind="show" id="utO-Lq-L6x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Shb-Zr-8dB" id="wZH-sZ-lUK"/>
                         <outlet property="tipControl" destination="Vz4-hq-Jem" id="DJW-fC-ddC"/>
@@ -105,7 +116,22 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.74384236453201"/>
+            <point key="canvasLocation" x="2018.4000000000001" y="133.74384236453201"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ZZ4-p3-Ixa">
+            <objects>
+                <viewController id="0f2-5u-69K" customClass="SettingsViewController" customModule="tippy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3M-cf-OSr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TPk-3H-PZH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUm-dS-CyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2789" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Cq-l3-V8J">
@@ -118,12 +144,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a42-vr-bXQ"/>
+                        <segue destination="Wnl-Ad-NaN" kind="relationship" relationship="rootViewController" id="a42-vr-bXQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRR-L0-Lqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.74384236453201"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5jI-at-qA8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wnl-Ad-NaN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Wnj-Yz-4yc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dUM-Xn-100">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wMG-fq-ll1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zob-qu-7U5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>

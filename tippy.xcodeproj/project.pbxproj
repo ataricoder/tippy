@@ -14,6 +14,7 @@
 		3B405EFD22001199000BC13F /* tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405EFC22001199000BC13F /* tippyTests.swift */; };
 		3B405F0822001199000BC13F /* tippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F0722001199000BC13F /* tippyUITests.swift */; };
 		3B405F16220011C2000BC13F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F15220011C2000BC13F /* CalculatorViewController.swift */; };
+		3B405F18220020FA000BC13F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B405F17220020FA000BC13F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3B405F0722001199000BC13F /* tippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tippyUITests.swift; sourceTree = "<group>"; };
 		3B405F0922001199000BC13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B405F15220011C2000BC13F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		3B405F17220020FA000BC13F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3B405EF022001198000BC13F /* LaunchScreen.storyboard */,
 				3B405EEE22001198000BC13F /* Assets.xcassets */,
 				3B405EF322001198000BC13F /* Info.plist */,
+				3B405F17220020FA000BC13F /* SettingsViewController.swift */,
 			);
 			path = tippy;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				3B405F16220011C2000BC13F /* CalculatorViewController.swift in Sources */,
 				3B405EE822001197000BC13F /* AppDelegate.swift in Sources */,
+				3B405F18220020FA000BC13F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
