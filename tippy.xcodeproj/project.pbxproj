@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				3B405EE722001197000BC13F /* AppDelegate.swift */,
-				3B405EEB22001197000BC13F /* Main.storyboard */,
-				3B405EEE22001198000BC13F /* Assets.xcassets */,
-				3B405EF022001198000BC13F /* LaunchScreen.storyboard */,
-				3B405EF322001198000BC13F /* Info.plist */,
 				3B405F15220011C2000BC13F /* CalculatorViewController.swift */,
+				3B405EEB22001197000BC13F /* Main.storyboard */,
+				3B405EF022001198000BC13F /* LaunchScreen.storyboard */,
+				3B405EEE22001198000BC13F /* Assets.xcassets */,
+				3B405EF322001198000BC13F /* Info.plist */,
 			);
 			path = tippy;
 			sourceTree = "<group>";
