@@ -17,6 +17,8 @@ class CalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Tippy"
     }
     
     @IBAction func onTap(_ sender: Any) {
