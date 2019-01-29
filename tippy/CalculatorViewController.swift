@@ -16,7 +16,7 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func onTap(_ sender: Any) {
-        print("Hello);
+        print("Hello");
     }
     
 
