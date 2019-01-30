@@ -144,6 +144,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Shb-Zr-8dB" id="wZH-sZ-lUK"/>
+                        <outlet property="splitControl" destination="yNv-Di-MvX" id="2bc-6q-hWx"/>
                         <outlet property="splitField" destination="bW5-H2-pzc" id="QTR-lk-QO4"/>
                         <outlet property="tipControl" destination="Vz4-hq-Jem" id="DJW-fC-ddC"/>
                         <outlet property="tipLabel" destination="FRf-e8-nsX" id="ME3-5B-kCT"/>
