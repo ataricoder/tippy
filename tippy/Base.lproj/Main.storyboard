@@ -136,7 +136,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tippy" id="uZC-66-RkX">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="TPj-Q8-gBW">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="TPj-Q8-gBW">
                             <connections>
                                 <segue destination="pF4-G7-9aI" kind="show" id="4nR-Nb-EFE"/>
                             </connections>
@@ -167,7 +167,19 @@
                     <view key="view" contentMode="scaleToFill" id="lzZ-qZ-isE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="made by @ataricoder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UG-xX-HB1">
+                                <rect key="frame" x="56.666666666666657" y="390.66666666666669" width="262" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3UG-xX-HB1" firstAttribute="centerY" secondItem="lzZ-qZ-isE" secondAttribute="centerY" id="AUS-Px-dLc"/>
+                            <constraint firstItem="3UG-xX-HB1" firstAttribute="centerX" secondItem="lzZ-qZ-isE" secondAttribute="centerX" id="dEQ-n4-6yc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oMS-ml-Maw"/>
                     </view>
                 </viewController>
